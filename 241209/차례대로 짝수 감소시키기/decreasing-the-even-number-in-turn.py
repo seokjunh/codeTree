@@ -2,12 +2,12 @@ n = int(input())
 
 m = 1000
 
-i = 1
+i = 0
 s = 0
 while m >= 500:
-    m = m - 2*i
-    s += 2*i
-    if m <= n:
+    if m < n:
         print(i, s)
         break
+    m = m - 2*i
+    s += 2*i
     i += 1
