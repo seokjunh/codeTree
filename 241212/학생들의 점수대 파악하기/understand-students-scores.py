@@ -5,6 +5,9 @@ arr = list(map(str, input().split()))
 d = {}
 
 for i in arr:
+    if len(i) < 2:
+        continue
+        
     if i != "100":
         i = i[0] + "0"
 
